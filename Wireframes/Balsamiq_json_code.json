@@ -1,0 +1,609 @@
+{
+	"mockup": {
+		"controls": {
+			"control": [
+				{
+					"ID": "0",
+					"h": "421",
+					"locked": "true",
+					"measuredH": "725",
+					"measuredW": "356",
+					"typeID": "AndroidPhone",
+					"w": "199",
+					"x": "65",
+					"y": "120",
+					"zOrder": "0"
+				},
+				{
+					"ID": "1",
+					"h": "599",
+					"measuredH": "400",
+					"measuredW": "450",
+					"properties": {
+						"text": "A Web Page\nhttp://"
+					},
+					"typeID": "BrowserWindow",
+					"w": "907",
+					"x": "775",
+					"y": "132",
+					"zOrder": "1"
+				},
+				{
+					"ID": "2",
+					"h": "565",
+					"measuredH": "916",
+					"measuredW": "616",
+					"typeID": "iPad",
+					"w": "375",
+					"x": "328",
+					"y": "120",
+					"zOrder": "2"
+				},
+				{
+					"ID": "6",
+					"h": "25",
+					"measuredH": "80",
+					"measuredW": "275",
+					"properties": {
+						"align": "center",
+						"bold": "true",
+						"size": "13",
+						"text": "Select your birthday:"
+					},
+					"typeID": "Paragraph",
+					"w": "167",
+					"x": "83",
+					"y": "282",
+					"zOrder": "3"
+				},
+				{
+					"ID": "11",
+					"h": "27",
+					"measuredH": "27",
+					"measuredW": "118",
+					"properties": {
+						"text": "Calculate Again"
+					},
+					"typeID": "Button",
+					"w": "157",
+					"x": "83",
+					"y": "434",
+					"zOrder": "4"
+				},
+				{
+					"ID": "18",
+					"h": "27",
+					"measuredH": "27",
+					"measuredW": "118",
+					"properties": {
+						"text": "Calculate Again"
+					},
+					"typeID": "Button",
+					"w": "200",
+					"x": "423",
+					"y": "495",
+					"zOrder": "5"
+				},
+				{
+					"ID": "24",
+					"h": "29",
+					"measuredH": "27",
+					"measuredW": "118",
+					"properties": {
+						"text": "Calculate Again"
+					},
+					"typeID": "Button",
+					"w": "281",
+					"x": "1098",
+					"y": "565",
+					"zOrder": "6"
+				},
+				{
+					"ID": "38",
+					"children": {
+						"controls": {
+							"control": [
+								{
+									"ID": "0",
+									"measuredH": "24",
+									"measuredW": "24",
+									"properties": {
+										"icon": {
+											"ID": "birthday-cake",
+											"size": "small"
+										}
+									},
+									"typeID": "Icon",
+									"x": "0",
+									"y": "0",
+									"zOrder": "0"
+								}
+							]
+						}
+					},
+					"h": "24",
+					"measuredH": "24",
+					"measuredW": "24",
+					"typeID": "__group__",
+					"w": "24",
+					"x": "92",
+					"y": "346",
+					"zOrder": "9"
+				},
+				{
+					"ID": "42",
+					"h": "25",
+					"measuredH": "80",
+					"measuredW": "275",
+					"properties": {
+						"align": "center",
+						"bold": "true",
+						"size": "15",
+						"text": "Select your birthday:"
+					},
+					"typeID": "Paragraph",
+					"w": "167",
+					"x": "432",
+					"y": "292",
+					"zOrder": "12"
+				},
+				{
+					"ID": "47",
+					"h": "24",
+					"measuredH": "80",
+					"measuredW": "275",
+					"properties": {
+						"align": "center",
+						"size": "11",
+						"text": "Your next math birthday: "
+					},
+					"typeID": "Paragraph",
+					"w": "152",
+					"x": "104",
+					"y": "350",
+					"zOrder": "13"
+				},
+				{
+					"ID": "49",
+					"h": "35",
+					"measuredH": "80",
+					"measuredW": "275",
+					"properties": {
+						"align": "center",
+						"size": "12",
+						"text": " The new way to celebrate your special day!"
+					},
+					"typeID": "Paragraph",
+					"w": "146",
+					"x": "90",
+					"y": "223",
+					"zOrder": "7"
+				},
+				{
+					"ID": "50",
+					"measuredH": "29",
+					"measuredW": "149",
+					"properties": {
+						"size": "24",
+						"text": "Math-Birthday"
+					},
+					"typeID": "Title",
+					"w": "180",
+					"x": "74",
+					"y": "197",
+					"zOrder": "8"
+				},
+				{
+					"ID": "51",
+					"measuredH": "10",
+					"measuredW": "100",
+					"typeID": "HRule",
+					"w": "182",
+					"x": "74",
+					"y": "187",
+					"zOrder": "14"
+				},
+				{
+					"ID": "52",
+					"measuredH": "10",
+					"measuredW": "100",
+					"typeID": "HRule",
+					"w": "182",
+					"x": "74",
+					"y": "258",
+					"zOrder": "15"
+				},
+				{
+					"ID": "54",
+					"measuredH": "24",
+					"measuredW": "58",
+					"properties": {
+						"size": "10",
+						"text": "Month"
+					},
+					"typeID": "ComboBox",
+					"w": "57",
+					"x": "81",
+					"y": "308",
+					"zOrder": "16"
+				},
+				{
+					"ID": "55",
+					"measuredH": "25",
+					"measuredW": "50",
+					"properties": {
+						"size": "11",
+						"text": "Day"
+					},
+					"typeID": "ComboBox",
+					"w": "51",
+					"x": "143",
+					"y": "307",
+					"zOrder": "17"
+				},
+				{
+					"ID": "56",
+					"measuredH": "25",
+					"measuredW": "54",
+					"properties": {
+						"size": "11",
+						"text": "Year"
+					},
+					"typeID": "ComboBox",
+					"w": "51",
+					"x": "198",
+					"y": "307",
+					"zOrder": "18"
+				},
+				{
+					"ID": "58",
+					"h": "40",
+					"measuredH": "80",
+					"measuredW": "275",
+					"properties": {
+						"align": "center",
+						"text": "Your 10-day-old birthday \non 16-05-2017 date"
+					},
+					"typeID": "Paragraph",
+					"w": "167",
+					"x": "83",
+					"y": "382",
+					"zOrder": "19"
+				},
+				{
+					"ID": "59",
+					"measuredH": "24",
+					"measuredW": "58",
+					"properties": {
+						"size": "10",
+						"text": "Month"
+					},
+					"typeID": "ComboBox",
+					"w": "65",
+					"x": "407",
+					"y": "318",
+					"zOrder": "20"
+				},
+				{
+					"ID": "60",
+					"measuredH": "25",
+					"measuredW": "50",
+					"properties": {
+						"size": "11",
+						"text": "Day"
+					},
+					"typeID": "ComboBox",
+					"w": "58",
+					"x": "493",
+					"y": "318",
+					"zOrder": "21"
+				},
+				{
+					"ID": "61",
+					"measuredH": "25",
+					"measuredW": "54",
+					"properties": {
+						"size": "11",
+						"text": "Year"
+					},
+					"typeID": "ComboBox",
+					"w": "60",
+					"x": "565",
+					"y": "318",
+					"zOrder": "22"
+				},
+				{
+					"ID": "62",
+					"children": {
+						"controls": {
+							"control": [
+								{
+									"ID": "0",
+									"measuredH": "24",
+									"measuredW": "24",
+									"properties": {
+										"icon": {
+											"ID": "birthday-cake",
+											"size": "small"
+										}
+									},
+									"typeID": "Icon",
+									"x": "0",
+									"y": "0",
+									"zOrder": "0"
+								}
+							]
+						}
+					},
+					"h": "24",
+					"measuredH": "24",
+					"measuredW": "24",
+					"typeID": "__group__",
+					"w": "24",
+					"x": "441",
+					"y": "373",
+					"zOrder": "23"
+				},
+				{
+					"ID": "63",
+					"h": "24",
+					"measuredH": "80",
+					"measuredW": "275",
+					"properties": {
+						"align": "center",
+						"size": "11",
+						"text": "Your next math birthday: "
+					},
+					"typeID": "Paragraph",
+					"w": "152",
+					"x": "453",
+					"y": "377",
+					"zOrder": "24"
+				},
+				{
+					"ID": "64",
+					"h": "40",
+					"measuredH": "80",
+					"measuredW": "275",
+					"properties": {
+						"align": "center",
+						"text": "Your 10-day-old birthday \non 16-05-2017 date"
+					},
+					"typeID": "Paragraph",
+					"w": "167",
+					"x": "440",
+					"y": "422",
+					"zOrder": "25"
+				},
+				{
+					"ID": "67",
+					"h": "35",
+					"measuredH": "80",
+					"measuredW": "275",
+					"properties": {
+						"align": "center",
+						"size": "14",
+						"text": " The new way to celebrate your special day!"
+					},
+					"typeID": "Paragraph",
+					"w": "197",
+					"x": "419",
+					"y": "236",
+					"zOrder": "10"
+				},
+				{
+					"ID": "68",
+					"measuredH": "33",
+					"measuredW": "174",
+					"properties": {
+						"size": "28",
+						"text": "Math-Birthday"
+					},
+					"typeID": "Title",
+					"w": "234",
+					"x": "407",
+					"y": "199",
+					"zOrder": "11"
+				},
+				{
+					"ID": "69",
+					"measuredH": "10",
+					"measuredW": "100",
+					"typeID": "HRule",
+					"w": "336",
+					"x": "347",
+					"y": "271",
+					"zOrder": "28"
+				},
+				{
+					"ID": "70",
+					"measuredH": "10",
+					"measuredW": "100",
+					"typeID": "HRule",
+					"w": "336",
+					"x": "347",
+					"y": "187",
+					"zOrder": "29"
+				},
+				{
+					"ID": "72",
+					"h": "39",
+					"measuredH": "80",
+					"measuredW": "275",
+					"properties": {
+						"align": "center",
+						"size": "16",
+						"text": " The new way to celebrate your special day!"
+					},
+					"typeID": "Paragraph",
+					"w": "211",
+					"x": "1123",
+					"y": "271",
+					"zOrder": "26"
+				},
+				{
+					"ID": "73",
+					"measuredH": "37",
+					"measuredW": "199",
+					"properties": {
+						"size": "32",
+						"text": "Math-Birthday"
+					},
+					"typeID": "Title",
+					"w": "234",
+					"x": "1112",
+					"y": "222",
+					"zOrder": "27"
+				},
+				{
+					"ID": "74",
+					"measuredH": "10",
+					"measuredW": "100",
+					"typeID": "HRule",
+					"w": "907",
+					"x": "775",
+					"y": "315",
+					"zOrder": "30"
+				},
+				{
+					"ID": "75",
+					"measuredH": "10",
+					"measuredW": "100",
+					"typeID": "HRule",
+					"w": "907",
+					"x": "775",
+					"y": "210",
+					"zOrder": "31"
+				},
+				{
+					"ID": "76",
+					"h": "25",
+					"measuredH": "80",
+					"measuredW": "275",
+					"properties": {
+						"align": "center",
+						"bold": "true",
+						"size": "17",
+						"text": "Select your birthday:"
+					},
+					"typeID": "Paragraph",
+					"w": "199",
+					"x": "1139",
+					"y": "332",
+					"zOrder": "32"
+				},
+				{
+					"ID": "77",
+					"measuredH": "24",
+					"measuredW": "58",
+					"properties": {
+						"size": "10",
+						"text": "Month"
+					},
+					"typeID": "ComboBox",
+					"w": "100",
+					"x": "1061",
+					"y": "373",
+					"zOrder": "33"
+				},
+				{
+					"ID": "78",
+					"measuredH": "25",
+					"measuredW": "50",
+					"properties": {
+						"size": "11",
+						"text": "Day"
+					},
+					"typeID": "ComboBox",
+					"w": "101",
+					"x": "1177",
+					"y": "373",
+					"zOrder": "34"
+				},
+				{
+					"ID": "79",
+					"measuredH": "25",
+					"measuredW": "54",
+					"properties": {
+						"size": "11",
+						"text": "Year"
+					},
+					"typeID": "ComboBox",
+					"w": "101",
+					"x": "1294",
+					"y": "373",
+					"zOrder": "35"
+				},
+				{
+					"ID": "80",
+					"children": {
+						"controls": {
+							"control": [
+								{
+									"ID": "0",
+									"measuredH": "24",
+									"measuredW": "24",
+									"properties": {
+										"icon": {
+											"ID": "birthday-cake",
+											"size": "small"
+										}
+									},
+									"typeID": "Icon",
+									"x": "0",
+									"y": "0",
+									"zOrder": "0"
+								}
+							]
+						}
+					},
+					"h": "29",
+					"measuredH": "24",
+					"measuredW": "24",
+					"typeID": "__group__",
+					"w": "27",
+					"x": "1139",
+					"y": "439",
+					"zOrder": "36"
+				},
+				{
+					"ID": "81",
+					"h": "29",
+					"measuredH": "80",
+					"measuredW": "275",
+					"properties": {
+						"align": "center",
+						"size": "16",
+						"text": "Your next math birthday: "
+					},
+					"typeID": "Paragraph",
+					"w": "195",
+					"x": "1161",
+					"y": "439",
+					"zOrder": "37"
+				},
+				{
+					"ID": "82",
+					"h": "49",
+					"measuredH": "80",
+					"measuredW": "275",
+					"properties": {
+						"align": "center",
+						"size": "16",
+						"text": "Your 10-day-old birthday \non 16-05-2017 date"
+					},
+					"typeID": "Paragraph",
+					"w": "215",
+					"x": "1131",
+					"y": "495",
+					"zOrder": "38"
+				}
+			]
+		},
+		"measuredH": "731",
+		"measuredW": "1682",
+		"mockupH": "611",
+		"mockupW": "1617",
+		"version": "1.0"
+	}
+}
