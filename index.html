@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MathBirthdays</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.css" />
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap.material-design/4.0.2/bootstrap-material-design.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/css/ripples.min.css">
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Roboto);
+        @import url('https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz');
+        @import url('https://fonts.googleapis.com/css?family=Lobster');
+
+		.logo{
+			font-family: 'Lobster';
+			margin-bottom: 10px;
+			color: #81bcd7;
+			/*color: #fff;*/
+			text-shadow: 0 0 10px #000, 0 0 20px;
+		}
+		.sublogo{
+			font-style: italic;
+		}
+
+
+        html,body{
+        	width: 100%;
+        	height: 100%;
+        }
+        html, body, main, input, label, div {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h2,h4,label{
+          	color:#fff;
+        }
+        h4{
+        	letter-spacing: 1px;
+        }
+        body {
+                        
+            font-family:'Yanone Kaffeesatz', sans-serif;
+          
+            background-color:black;
+            background-image:
+            radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+            radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+            radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+            radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+            background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px; 
+            background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+        }
+        h2{
+          /*text-shadow:2px 2px #eee;*/
+        }
+        .uib-datepicker table {
+		    min-width: 100%!important;
+		}
+
+		header{
+			background: rgba(255, 255, 255, 0.3);
+		}
+		section,header{
+			padding: 13px;
+		}
+		label,p{
+			font-size: 1.1em;
+			letter-spacing: 1px;
+		}
+		.msg{
+			display: flex;
+			text-align: center;
+			justify-content: center;
+		}
+		.msg i{
+			margin-right: 5px;
+			font-size: 4em;
+		}
+		.msg span{
+			display: flex;
+			justify-content: center;
+			align-items: center;			
+		}
+		p{
+			margin: 0;
+		}
+		.button-reset{
+			color: #fff;
+			background: rgba(255, 255, 255, 0.3);
+		}
+		.button-reset:hover{
+			color: #fff;
+		}
+
+
+
+	    @media (min-width: 544px){
+			.col-sm-offset-3 {
+			    margin-left: 25%;
+			}
+		}
+	
+	    /* Extra Small Devices, Phones */ 
+	    @media only screen and (max-width : 480px) {
+			h2{
+				font-size: 2em;
+			}
+			h4{
+				font-size: 1.3em;
+			}
+	    }
+
+
+    </style>
+</head>
+<body ng-app="mathBirthdays">
+	  <header>
+		
+		<h1 class="logo text-center">Math-Birthday</h1>
+
+  		<h4 class="text-center hidden-xs-down">We want to introduce you "The Math BirthDay":</h4> 
+  		<h4 class="text-center sublogo">The new way to celebrate your special day!</h4>
+	  </header>
+	  <section>	  	
+		  <div class="container-form" ng-controller="MainCtrl">
+		    <div class="row">
+
+			   <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 text-center" style="min-height:290px;">
+			   		<label for="" class="">Please! Let us know what is your birthday</label>
+					<div uib-datepicker ng-model="bitrhday" class="well well-sm datepicker" datepicker-options="options" datepicker-mode="mode"></div>
+				</div>
+			</div>
+		    <div class="row">
+		    	<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
+		    		<div class="alert alert-info msg" ng-show="msg.length > 0">
+		    			<i class="fa fa-birthday-cake" aria-hidden="true"></i>
+		    			<span>		    				
+			    			<p ng-bind-html="msg">
+			    				
+			    			</p>
+		    			</span>
+		    		</div>
+		    		<a ng-click="init()" href="javascript:void(0)" ng-show="msg.length > 0" class="btn btn-raised col-xs-12 button-reset">
+		    			Calculate a new Math-BirthDay
+		    		</a>
+		      	</div>
+		    </div>
+		  </div>
+	  </section>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/material.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-material-design/0.3.0/js/ripples.min.js"></script>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+	   <script type="text/javascript">
+        'use strict';
+
+        var app = angular.module('mathBirthdays', ['ngAnimate', 'ngSanitize', 'ui.bootstrap']);
+        app.controller('MainCtrl', ['$scope','$timeout',mainctr]);
+
+        function mainctr ($scope,$timeout) {
+			$scope.options = {
+				showWeeks: false,
+				datepickerMode:'year'
+			};
+			$scope.init = function () {				
+				$scope.msg = '';
+				$scope.bitrhday = '';
+				var elementToggle = $("button[ng-click='toggleMode()']");
+				if (elementToggle) {
+					$timeout(function () {						
+						elementToggle.click();
+						elementToggle.click();
+					});
+				}
+			};
+
+			$scope.init();
+
+
+			var showMessage = function (daysRange,dateBirthday) {
+				var dateBirthdate = dateBirthday.format('DD-MM-YYYY');
+				var msg = "Your next math birthday is your <strong>"+daysRange+"-day-old birthday</strong> on <strong>"+dateBirthdate+"</strong> date";
+				$scope.msg = msg;
+			};
+
+			var validateDaysAlive = function (days,dateUser) {
+				var daysLength = days.toString().length;
+				var nextMathbirthdayRange = Math.pow(10,daysLength);
+				var nextMathbirthdayDate = dateUser.add(nextMathbirthdayRange,'days');				
+				
+				showMessage(nextMathbirthdayRange,nextMathbirthdayDate);
+			};
+
+			var calculateMathBirthday = function (date) {
+				var dateUser = moment(date);
+				var dateNow = moment(Date.now());
+				var daysAlive = dateNow.diff(dateUser, 'days');
+				validateDaysAlive(daysAlive,dateUser);
+			};
+			$scope.$watch('bitrhday',function(){
+				if ($scope.bitrhday) {
+					calculateMathBirthday($scope.bitrhday);
+				}
+			});
+   
+           
+        };
+
+    </script>
+
+</body>
+</html>
